@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <script>document.documentElement.classList.remove('no-js');</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>André Ataíde — IT Risk & Security Engineering</title>
+    <meta name="description" content="IT Risk, GRC, and security engineering. Open-source tooling in Go: Vexil, Wardex.">
+    <meta name="author" content="André Ataíde">
+
+    <!-- Open Graph (LinkedIn preview) -->
+    <meta property="og:title" content="André Ataíde">
+    <meta property="og:description" content="IT Risk · Security Engineering · Open Source">
+    <meta property="og:url" content="https://hadnu.github.io">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo display-font">André Ataíde</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                </button>
+                <div class="nav-links" id="navLinks">
+                    <a href="#about">about</a>
+                    <a href="#projects">projects</a>
+                    <a href="#publications">publications</a>
+                    <a href="writing/index.html">writing</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section class="hero">
+            <h1>André Ataíde</h1>
+            <p class="tagline mono-font">IT Risk · Security Engineering · Open Source</p>
+            <p class="location">Portugal</p>
+            <div class="social-links">
+                <a href="https://github.com/had-nu" target="_blank" rel="noopener">GitHub</a>
+                <a href="#" data-todo="true">LinkedIn</a>
+                <a href="#" data-todo="true">arXiv</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 class="section-title">about</h2>
+            <p>
+                I work at the intersection of IT Risk, GRC, and security engineering. My focus is on making security decisions traceable — connecting detection output, compliance controls, and release gates into systems that produce audit evidence, not just alerts.
+            </p>
+            <p>
+                I build open-source tooling in Go that operationalises these ideas: entropy-based secret detection, risk-driven release gates, and the supporting infrastructure between them.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">projects</h2>
+            <div class="project-grid">
+                <!-- Vexil -->
+                <div class="project-card">
+                    <h3><a href="https://github.com/had-nu/vexil" target="_blank" rel="noopener">Vexil</a></h3>
+                    <p class="tagline">Shannon entropy secret detection for air-gapped environments</p>
+                    <div class="footer">
+                        <div class="project-tags">
+                            <span class="tag">Go</span>
+                        </div>
+                        <span class="badge">active</span>
+                    </div>
+                </div>
+
+                <!-- Wardex -->
+                <div class="project-card">
+                    <h3><a href="https://github.com/had-nu/wardex" target="_blank" rel="noopener">Wardex</a></h3>
+                    <p class="tagline">Risk-driven release gate engine</p>
+                    <div class="footer">
+                        <div class="project-tags">
+                            <span class="tag">Go</span>
+                        </div>
+                        <span class="badge">active</span>
+                    </div>
+                </div>
+
+                <!-- lazy.go -->
+                <div class="project-card">
+                    <h3><a href="https://github.com/had-nu/lazy.go" target="_blank" rel="noopener">lazy.go</a></h3>
+                    <p class="tagline">Go project scaffolding tool</p>
+                    <div class="footer">
+                        <div class="project-tags">
+                            <span class="tag">Go</span>
+                        </div>
+                        <span class="badge">stable</span>
+                    </div>
+                </div>
+
+                <!-- Prana Network -->
+                <div class="project-card">
+                    <h3><a href="https://github.com/had-nu/prana" target="_blank" rel="noopener">Prana Network</a></h3>
+                    <p class="tagline">Distributed reputation-based blockchain protocol</p>
+                    <div class="footer">
+                        <div class="project-tags">
+                            <span class="tag">Go</span>
+                        </div>
+                        <span class="badge">research</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications">
+            <h2 class="section-title">publications</h2>
+            <div class="pub-list">
+                <div class="pub-item">
+                    <h3><a href="#" data-todo="true">Beyond Entropy Thresholds: Formalising the Scope Limitation of Entropy-Based Secret Detection and a Bifurcated Classifier Model</a></h3>
+                    <div class="pub-meta">
+                        André Ataíde · arXiv preprint · cs.CR · 2025
+                    </div>
+                    <p class="pub-abstract">
+                        Formalises the scope boundary of Shannon entropy as a secret discriminator, introducing a token_class / credential_class bifurcation and a composite classifier for air-gapped environments.
+                    </p>
+                </div>
+                <!-- If no publications, uncomment the below and comment out the above -->
+                <!-- <p class="empty-state">No publications yet. Preprint forthcoming.</p> -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="container">
+        <div class="footer-content">
+            <p>© André Ataíde · hadnu.github.io · Built with HTML/CSS</p>
+            <div class="footer-links">
+                <a href="https://github.com/had-nu" target="_blank" rel="noopener">GitHub</a>
+                <a href="#" data-todo="true">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
